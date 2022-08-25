@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
 .nav_bar {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 
 .nav_bar ul li {
+    color: #242D52;;
     list-style: none;
-    font-size: xx-large;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: default;
 }
 
 .get-btn {
@@ -15,29 +28,42 @@
     color: white;
     padding: 15px 30px;
     border-radius: 40px;
+    cursor: pointer;
+    
 }
 
 .container {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
+    gap: 100px;
 }
 
 .title {
-   font-size: xx-large;
-   width: 300px;
+    color: #242D52;
+    font-size: 35px;
+    font-weight: bold;
+    width: 300px;
+    padding-bottom: 15px;
 }
 
 .sub-title {
+    color: #9095A7;
+    font-weight: 400;
+    font-size: 13px;
     width: 330px;
+    padding-bottom: 20px;
 }
 
 .start-btn {
     border: none;
-    background-color: rgb(252, 98, 89);
+    background: rgb(243,55,128);
+    background: linear-gradient(0deg, rgba(243,55,128,1) 21%, rgba(254,103,82,1) 57%);
     color: white;
     padding: 15px 30px;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 .img-back img {
@@ -45,9 +71,116 @@
 }
 
 .block_left {
-    position: absolute;
-    top: 320px;
-    padding: 1px 20px;
-    background-color: aqua;
+    position: relative;
+    top: 300px;
+    right: 10px;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    width: 130px;
+    height: 80px;
+}
+
+.font-h4 {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 0px 0px 12px;
+    color: #9095A7;
+}
+
+.block_left h3 {
+    color: #242D52;
+    padding: 0px 0px 0px 10px;
+    font-size: 30px;
+}
+
+
+.block_right {
+    position: relative;
+    top: 70px;
+    left: 160px;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100px;
+    height: 70px;
+}
+
+.block_right h3 {
+    padding: 2px 10px;
+    margin: 0px;
+    color: #242D52;
+}
+
+.container_card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px 20px;
+    margin-bottom: 100px;
+}
+
+.card_main {
+    background: linear-gradient(0deg, rgba(243,55,128,1) 21%, rgba(254,103,82,1) 57%);
+    color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    height: 220px;
+    font-size: 15px;
+    padding: 40px 40px 20px 30px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    height: 220px;
+    padding: 40px 20px 20px 18px;
+    border-radius: 10px;
+}
+
+.card h1 {
+    font-size: 18px;
+    color: #242D52;;
+}
+
+.card p {
+    font-size: 12px;
+    padding: 15px 0px;
+    color: #9095A7;;
+}
+
+.card a {
+    font-size: 12px;
+    color: rgb(243,55,128);
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(20, 24, 63);
+
+}
+
+footer button {
+    border: none;
+    background: rgb(119,76,191);
+    background: linear-gradient(180deg, rgba(119,76,191,1) 0%, rgba(225,61,183,1) 48%);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 40px;
+    margin: 10px 0px;
+    height: 40px;
+    cursor: pointer;
+}
+
+footer h2 {
+    color: white;
+    margin: 15px 10px;
+    cursor: default;
 }
